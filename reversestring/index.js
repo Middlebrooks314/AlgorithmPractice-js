@@ -16,8 +16,9 @@ function reverse(string) {
     return array.join("");
   }
   
-  // shorter solution
+//   shorter solution
   function reverse(string) {
+    debugger
     return string
       .split("")
       .reverse()
@@ -43,6 +44,8 @@ function reverse(string) {
     let reversed = "";
     for (let character of string) {
       reversed = character + reversed;
+      debugger
+
     }
     return reversed;
   }
@@ -56,10 +59,13 @@ function reverse(string) {
   // the function runs one time for each value in the array. 
   
   function reverse(string) {
+      debugger
     return string.split("").reduce((reversed, character) => {
       return character + reversed;
     }, '');
   }
+
+//   reverse('hello')
   
   //one liner with ES6 implicit return 
   
