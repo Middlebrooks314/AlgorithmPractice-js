@@ -18,8 +18,9 @@ function reverse(string) {
     return array.join("");
   }
   
-  // shorter solution
+//   shorter solution
   function reverse(string) {
+    debugger
     return string
       .split("")
       .reverse()
@@ -45,6 +46,8 @@ function reverse(string) {
     let reversed = "";
     for (let character of string) {
       reversed = character + reversed;
+      debugger
+
     }
     return reversed;
   }
@@ -58,10 +61,13 @@ function reverse(string) {
   // the function runs one time for each value in the array. 
   
   function reverse(string) {
+      debugger
     return string.split("").reduce((reversed, character) => {
       return character + reversed;
     }, '');
   }
+
+//   reverse('hello')
   
   //one liner with ES6 implicit return 
   
@@ -69,14 +75,4 @@ function reverse(string) {
   
   module.exports = reverse;
   
-  // REACTO
-  
-  // R - *Repeat* the question (make sure you understand the question)
-  // E - Give *examples* (given these parameters what output do you expect)
-  // A - Describe your *approaches* (help the interviewer understand the path and you can get a little feedback from interviewer's response)
-  // C - *Code*... psudocode from higher level (Breath first coding from CTCI Book),
-  // T - *Test* your code, Run some of the examples through the code, use another color to show the changing variables, show that you can find your own problems
-  // O - *Optimization* and run time, see if you can refactor **Big O**
-  
-  //Extra tips - leave space to add and remove code because it isnt like a text editor, star things that you are not sure about
   
