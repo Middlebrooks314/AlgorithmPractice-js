@@ -44,3 +44,25 @@ function maxChar(str) {
 }
 
 module.exports = maxChar;
+
+// function usernamesSystem(u) {
+
+//username can only be used once, then it adds a number the end 
+//   // Write your code here
+//   const nameMap = {};
+//   let nameArray = [];
+
+// for (let name of u) {
+//   if (nameMap[name]) {
+//       nameArray.push(name + nameMap[name])
+//       nameMap[name]++;
+//   } else {
+//       nameMap[name] = 1;
+//       nameArray.push(name)
+//   }
+  
+// } 
+// return nameArray;
+// }
+
+// usernamesSystem(["alex", "mya", "alex", "blue", "alex", "mya", "alex"]);
